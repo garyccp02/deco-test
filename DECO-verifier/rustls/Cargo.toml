@@ -1,0 +1,97 @@
+[package]
+name = "rustls"
+version = "0.20.0"
+edition = "2018"
+authors = ["Joseph Birr-Pixton <jpixton@gmail.com>"]
+license = "Apache-2.0/ISC/MIT"
+readme = "../README.md"
+description = "Rustls is a modern TLS library written in Rust."
+homepage = "https://github.com/rustls/rustls"
+repository = "https://github.com/rustls/rustls"
+categories = ["network-programming", "cryptography"]
+autobenches = false
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+lazy_static = "1.4.0"
+log = { version = "0.4.4", optional = true }
+ring = "0.16.20"
+# ring = {version = "0.16.20", features = ["rustc_private"] }
+# ring = { path = "../../ring_revised" }
+sct = "0.7.0"
+webpki = { version = "0.22.0", features = ["alloc", "std"] }
+curv = { package = "curv-kzen", version = "0.9", default-features = false }
+#paillier = { git = "https://github.com/KZen-networks/rust-paillier", tag = "v0.3.10" }
+paillier = {package = "kzen-paillier", version = "0.4.2"}
+class_group = "0.6.0"
+env_logger = "0.9.0"
+# log = "0.4.4"
+webpki-roots = "0.22.0"
+criterion = "0.3.0"
+rustls-pemfile = "0.2.0"
+base64 = "0.13.0"
+docopt = "~1.1"
+mio = { version = "0.8.4", features = ["os-poll", "net"] }
+serde_derive = "1.0"
+# libc = {version= "0.2.106"}
+libc = "0.2"
+serde_json = "1.0"
+getrandom = { version = "0.2.7", features = ["js"] }
+#secp256k1 = "0.20.3"
+#secp256k1-sys = "0.4.2"
+#wasm-bindgen = "0.2.81"
+
+[features]
+default = ["logging", "tls12"]
+logging = ["log"]
+dangerous_configuration = []
+quic = []
+tls12 = []
+
+[dev-dependencies]
+env_logger = "0.9.0"
+log = "0.4.4"
+webpki-roots = "0.22.0"
+criterion = "0.3.0"
+rustls-pemfile = "0.2.0"
+base64 = "0.13.0"
+docopt = "~1.1"
+mio = { version = "0.8.4", features = ["os-poll", "net"] }
+# libc = "0.2"
+# libc = {version = "0.2.106", features = ["rustc_private"] }
+
+
+
+[[example]]
+name = "bogo_shim"
+path = "examples/internal/bogo_shim.rs"
+required-features = ["dangerous_configuration", "quic"]
+
+[[example]]
+name = "trytls_shim"
+path = "examples/internal/trytls_shim.rs"
+
+[[example]]
+name = "bench"
+path = "examples/internal/bench.rs"
+
+[[bench]]
+name = "benchmarks"
+path = "tests/benchmarks.rs"
+harness = false
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
+
+[lib]
+name = "rustls"
+#crate-type = ["cdylib"]
+
+[dependencies.untrusted]
+version = "0.7.1"
+
+[[bin]]
+edition = "2018"
+name = "deco_verifier"
+path = "src/main.rs"
