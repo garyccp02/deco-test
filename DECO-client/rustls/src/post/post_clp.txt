@@ -1,0 +1,14 @@
+POST /Service/ServiceGetAccBaseInfoWithBillV2.ashx HTTP/1.1
+Host: services.clp.com.hk
+html-lang: en
+x-csrftoken: f080d694d4ce4e09a5bc5dabc412daf4
+origin: https://services.clp.com.hk
+sec-fetch-site: same-origin
+sec-fetch-mode: cors
+sec-fetch-dest: empty
+referer: https://services.clp.com.hk/en/dashboard/index.aspx
+cookie: _TrJa53u6G6UdJZLz_banner=nIpPgqYPNddBPZIsGZEYwy3ScdxdfyCP2M%2bSbkQBuCIWccH4aIBcSx8YZXEbuKrsIRqvkR9rDZqTC%2bj7WAvi7l%2bXwONQRbJX6Ss9%2bMDCJB%2foUrjrBtAU2Oxegk7VHcBe; __cfruid=80f3878002a0cac331a3d33a4206fcbc3df3cf02-1648621885; _gcl_au=1.1.1162346131.1648621887; s_fid=2D24ED317DDDA1ED-1074AE599F661584; s_cc=true; _uetsid=07f71cc0aff311ec9c6cc139d07997a4; _uetvid=07fa53c0aff311ec9dd7ad8907a12e2c; _ga=GA1.3.2113631785.1648621889; _gid=GA1.3.23136439.1648621889; _fbp=fb.2.1648621889382.287938445; _hjSessionUser_2304500=eyJpZCI6IjYzOWE2NWJmLWQ1NzUtNTE2ZC1iZGI1LTJmNWU3ODE5MTE2OSIsImNyZWF0ZWQiOjE2NDg2MjE4ODk5NjIsImV4aXN0aW5nIjpmYWxzZX0=; website#lang=en; K2Cie90hi___AntiXsrfToken=f080d694d4ce4e09a5bc5dabc412daf4; ARRAffinity=4ac8da8f677f0c8447fe184d1b1a24e0386c5e64351b4a5cd8290d896ff9a8d6; ARRAffinitySameSite=4ac8da8f677f0c8447fe184d1b1a24e0386c5e64351b4a5cd8290d896ff9a8d6; _ga=GA1.4.2113631785.1648621889; _gid=GA1.4.23136439.1648621889; ASP.NET_SessionId=ptxa0lcc4gqnve5wwkzzn10t; _gat_UA-68003422-2=1; ASP.NET_SessionId=51cvv4e1kzjclnwd5yyyllwm;_cfuvid=KdD.QvwFacpRWf0kLT9lwQdfxem9snIV6ZOXMy1fr9A-1667913421633-0-604800000;ARRAffinitySameSite=be5c8f20524de35ac6bb114eb0b493f6ee443cd1221bec2cb69f2f487b5a6a19;ARRAffinity=be5c8f20524de35ac6bb114eb0b493f6ee443cd1221bec2cb69f2f487b5a6a19
+content-length: 19
+content-type: application/x-www-form-urlencoded
+
+assCA=&genPdfFlag=X

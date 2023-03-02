@@ -1,0 +1,16 @@
+GET / HTTP/1.1
+Host: my.polyu.edu.hk
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Language: zh-TW,zh;q=0.9,en;q=0.8,en-US;q=0.7
+Cache-Control: max-age=0
+Connection: keep-alive
+Cookie: BIGipServerOpenShift-InfraNode_HTTPS_POOL=rd1267o00000000000000000000ffff0a0d286fo443; BIGipServerRP_CENTRAL_INFRA_HTTPS_POOL=rd1319o00000000000000000000ffff0a0d840co443; BIGipServerWAF_WWW-PROD_One-Level_HTTP_8443_POOL=rd1322o00000000000000000000ffff0a0d8455o8443; BIGipServerRP_CENTRAL_INFRA_HTTP_POOL=rd1319o00000000000000000000ffff0a0d840bo80; BIGipServerWAF_WWW-PROD_One-Level_HTTP_80_POOL=rd1322o00000000000000000000ffff0a0d842fo80; _ga=GA1.3.1587419517.1665574481; f073e49c72f84c7743449482b88fb730=87c8476fe21d837563b5129d70ec8617; _fbp=fb.2.1666349411947.430940890; _gid=GA1.3.1535051271.1667046739; 8fc06e850d2a70cf25161f38cb8f3a36=pa3bei25fgijm1a3pa5h0sc6m3; TS01191222=0183ba1f88acdde370a2a130237e21fe6e8fc9fd7bb13fcf2b5aa44cb6f8eb0b2bfffd13d2ae4af68794755e5e0d71b58cedd73b3dc77ca4ecce7d9f7de0f4cf7f83e2b71e
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: cross-site
+
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="106", "Google Chrome";v="106", "Not;A=Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"

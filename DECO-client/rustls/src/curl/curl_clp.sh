@@ -1,0 +1,21 @@
+curl -L https://services.clp.com.hk/en/dashboard/index.aspx --cookie-jar ./rustls/src/cookie.txt 'https://services.clp.com.hk/Service/ServiceLogin.ashx' \
+  -H 'authority: services.clp.com.hk' \
+  -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="99", "Google Chrome";v="99"' \
+  -H 'devicetype: web' \
+  -H 'html-lang: en' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36' \
+  -H 'content-type: application/x-www-form-urlencoded; charset=UTF-8' \
+  -H 'accept: application/json, text/javascript, */*; q=0.01' \
+  -H 'x-requested-with: XMLHttpRequest' \
+  -H 'x-csrftoken: f080d694d4ce4e09a5bc5dabc412daf4' \
+  -H 'sec-ch-ua-platform: "macOS"' \
+  -H 'origin: https://services.clp.com.hk' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'referer: https://services.clp.com.hk/en/login/index.aspx' \
+  -H 'accept-language: zh-TW,zh;q=0.9,en;q=0.8,en-US;q=0.7' \
+  -H 'cookie: _TrJa53u6G6UdJZLz_banner=nIpPgqYPNddBPZIsGZEYwy3ScdxdfyCP2M%2bSbkQBuCIWccH4aIBcSx8YZXEbuKrsIRqvkR9rDZqTC%2bj7WAvi7l%2bXwONQRbJX6Ss9%2bMDCJB%2foUrjrBtAU2Oxegk7VHcBe; __cfruid=80f3878002a0cac331a3d33a4206fcbc3df3cf02-1648621885; _gcl_au=1.1.1162346131.1648621887; s_fid=2D24ED317DDDA1ED-1074AE599F661584; s_cc=true; _uetsid=07f71cc0aff311ec9c6cc139d07997a4; _uetvid=07fa53c0aff311ec9dd7ad8907a12e2c; _ga=GA1.3.2113631785.1648621889; _gid=GA1.3.23136439.1648621889; _fbp=fb.2.1648621889382.287938445; _hjSessionUser_2304500=eyJpZCI6IjYzOWE2NWJmLWQ1NzUtNTE2ZC1iZGI1LTJmNWU3ODE5MTE2OSIsImNyZWF0ZWQiOjE2NDg2MjE4ODk5NjIsImV4aXN0aW5nIjpmYWxzZX0=; website#lang=en; K2Cie90hi___AntiXsrfToken=f080d694d4ce4e09a5bc5dabc412daf4; ARRAffinity=4ac8da8f677f0c8447fe184d1b1a24e0386c5e64351b4a5cd8290d896ff9a8d6; ARRAffinitySameSite=4ac8da8f677f0c8447fe184d1b1a24e0386c5e64351b4a5cd8290d896ff9a8d6; _ga=GA1.4.2113631785.1648621889; _gid=GA1.4.23136439.1648621889; ASP.NET_SessionId=ptxa0lcc4gqnve5wwkzzn10t; _gat_UA-68003422-2=1' \
+  --data-raw "username=$1&password=$2&rememberMe=false&loginPurpose=&magentoToken=&domeoId=&domeoPointsBalance=&domeoPointsNeeded=" \
+  --compressed

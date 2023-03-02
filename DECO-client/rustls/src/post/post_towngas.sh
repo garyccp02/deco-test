@@ -1,0 +1,1 @@
+echo "POST /NewsNotices/GetNewsNoticeAsyncNew HTTP/1.0\r\nHost: $1\r\nCookie: $2\r\nContent-Length: 20\r\nContent-Type: application/x-www-form-urlencoded\r\n\r\naccountNo=$3" >| ./rustls/src/post/post_towngas.txt

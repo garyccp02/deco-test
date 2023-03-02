@@ -1,0 +1,1 @@
+echo "GET /apiservices/430405/Profile/Form/2/Steps HTTP/1.1\r\nHost: $1\r\nCookie: $2\r\ngroupid: 2\r\npageid: 94\r\nprofileownerid: 430405\r\nsiteinfoid: 1667\r\n" >| ./rustls/src/post/post_yalealumni.txt
